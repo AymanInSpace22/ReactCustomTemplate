@@ -1,5 +1,9 @@
+import ImageGenerationPage from "./ImageGenerationPage";
+
 function AI() {
-  return <h1>Hello World</h1>;
+  return (
+    <ImageGenerationPage />
+  );
 }
 
 export default AI;

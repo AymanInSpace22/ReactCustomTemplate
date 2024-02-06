@@ -91,3 +91,28 @@ button:focus-visible {
   padding: 50px;
 text-decoration: underline  rgb(0, 0, 0) 2px;
 }
+
+#aboutHero{
+  background: linear-gradient(0deg, #593e6f 0%, #ffffff 90%);
+  padding: 30px 100px 30px 100px;
+  /* border: dashed 3px rgb(21, 0, 0); */
+  margin-top: 35px;
+  margin-bottom: 100px;
+  border-radius: 100px;
+  filter: drop-shadow(-13px 18px 5px #616161);
+}
+
+#footer{
+  height: 100px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content:flex-end;
+  background-color: #593e6f;
+  color: violet;
+}
+
+#footer1{
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}

@@ -7,6 +7,7 @@ import Login from "./components/Login";
 import CreateAccount from "./components/CreateAccount";
 import NotFound from "./components/NotFound";
 import AI from "./components/AI";
+import Footer from "./components/Footer";
 
 // function AppRouter() {
 //   return (
@@ -55,6 +56,7 @@ function AppRouter() {
             <Route path="*" element={<NotFound />} />
             
           </Routes>
+          {/* <Footer /> */}
         </>
       )}
     </>
