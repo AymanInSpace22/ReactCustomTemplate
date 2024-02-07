@@ -9,7 +9,8 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/ai">AI</Nav.Link>
+            <Nav.Link as={Link} to="/imageGeneration">ImageGen</Nav.Link>
+            <Nav.Link as={Link} to="/chatApi">Chat</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             {/* Add more navigation links here */}
           </Nav>

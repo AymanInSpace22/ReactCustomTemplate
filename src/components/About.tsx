@@ -37,6 +37,7 @@ function About() {
   return (
     <>
       <Container className="d-flex  justify-content-center align-items-center " style={{ minHeight: '100vh' }}>
+     
       <div id="aboutHero">
         <h1 className="text-center" style={{textDecoration: "underline black 2px"}}>About "Blank"</h1>
         <h3 className='text-center'>Who are We?</h3>
@@ -49,46 +50,9 @@ function About() {
             <OffCanvasBtn />
           </div>
       </div>
-      
-      <div id="aboutHero">
-        <h1 className="text-center" style={{textDecoration: "underline black 2px"}}>About "Blank"</h1>
-        <h3 className='text-center'>Who are We?</h3>
-        <h5>We are a highly trained team of sexy agents that deliver software solutions</h5>
-        <h5>We are excited to have you try our product and would appreciate your feedback</h5>
-        
-        <br />
-        <div className="text-center"> {/* Center the image horizontally */}
-            <img src='thumbsUp.png' alt='Image' style={{ maxHeight: '100%', maxWidth: '100%', width: "300px", height: "auto" }} /> {/* Center the image vertically */}
-            <OffCanvasBtn />
-          </div>
-      </div>
+    
 
-      <div id="aboutHero">
-        <h1 className="text-center" style={{textDecoration: "underline black 2px"}}>About "Blank"</h1>
-        <h3 className='text-center'>Who are We?</h3>
-        <h5>We are a highly trained team of sexy agents that deliver software solutions</h5>
-        <h5>We are excited to have you try our product and would appreciate your feedback</h5>
-        
-        <br />
-        <div className="text-center"> {/* Center the image horizontally */}
-            <img src='thumbsUp.png' alt='Image' style={{ maxHeight: '100%', maxWidth: '100%', width: "300px", height: "auto" }} /> {/* Center the image vertically */}
-            <OffCanvasBtn />
-          </div>
-      </div>
     </Container>
-
-    <div id="aboutHero">
-        <h1 className="text-center" style={{textDecoration: "underline black 2px"}}>About "Blank"</h1>
-        <h3 className='text-center'>Who are We?</h3>
-        <h5>We are a highly trained team of sexy agents that deliver software solutions</h5>
-        <h5>We are excited to have you try our product and would appreciate your feedback</h5>
-        
-        <br />
-        <div className="text-center"> {/* Center the image horizontally */}
-            <img src='thumbsUp.png' alt='Image' style={{ maxHeight: '100%', maxWidth: '100%', width: "300px", height: "auto" }} /> {/* Center the image vertically */}
-            <OffCanvasBtn />
-          </div>
-      </div>
     </>
   );
 }

@@ -7,7 +7,12 @@ import Login from "./components/Login";
 import CreateAccount from "./components/CreateAccount";
 import NotFound from "./components/NotFound";
 import AI from "./components/AI";
+
+import ChatAPIComponent from "./components/ChatAPIComponent ";
+import ImageGeneration from "./components/ImageGeneration";
+
 import Footer from "./components/Footer";
+
 
 // function AppRouter() {
 //   return (
@@ -49,11 +54,13 @@ function AppRouter() {
           <Navigation />
           <Routes>
             <Route path="/home" element={<Home />} />
-            <Route path="/ai" element={<AI />} />
+            <Route path="/imageGeneration" element={<ImageGeneration />} />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<Login />} />
             <Route path="/create-account" element={<CreateAccount />} />
             <Route path="*" element={<NotFound />} />
+            
+            <Route path="/chatApi" element={<ChatAPIComponent />} />
             
           </Routes>
           {/* <Footer /> */}

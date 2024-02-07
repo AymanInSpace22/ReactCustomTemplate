@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 function OffCanvasBtn() {
   const [show, setShow] = useState(false);
@@ -16,11 +16,24 @@ function OffCanvasBtn() {
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Mission Statement</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          <p>
+            To empower every person and every organization on the planet to
+            achieve more.
+          </p>
+
+          <br />
+          <br />
+          <Offcanvas.Title>Core Values</Offcanvas.Title>
+
+          <br />
+          <ul>
+            <li>Innovation</li>
+            <li>Integrity</li>
+            <li>Creativity</li>
+          </ul>
         </Offcanvas.Body>
       </Offcanvas>
     </>
