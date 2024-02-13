@@ -138,9 +138,9 @@ const ChatAPIComponent: React.FC = () => {
                         />
                     </Form.Group>
                     <br />
-                    <Button variant="primary" onClick={handleSubmit} disabled={isLoading}>
+                    <button className='button' onClick={handleSubmit} disabled={isLoading}>
                         {isLoading ? 'Loading…' : 'Submit'}
-                    </Button>
+                    </button>
                 </Form>
             </Card>
 

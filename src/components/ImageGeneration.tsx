@@ -142,9 +142,9 @@ const ImageGeneration: React.FC = () => {
                         />
                     </Form.Group>
                     <br />
-                    <Button variant="primary" onClick={handleGenerateImage} disabled={isLoading}>
+                    <button className='button' onClick={handleGenerateImage} disabled={isLoading}>
                         {isLoading ? 'Generating…' : 'Generate Image'}
-                    </Button>
+                    </button>
                 </Form>
             </Card>
 

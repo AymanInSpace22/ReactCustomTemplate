@@ -10,9 +10,9 @@ function OffCanvasBtn() {
 
   return (
     <>
-      <Button id="hush" variant="primary" onClick={handleShow}>
+      <button className="button" id="hush"  onClick={handleShow}>
         Launch
-      </Button>
+      </button>
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>

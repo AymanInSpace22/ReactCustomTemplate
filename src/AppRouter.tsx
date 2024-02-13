@@ -6,12 +6,12 @@ import Navigation from "./components/Navigation";
 import Login from "./components/Login";
 import CreateAccount from "./components/CreateAccount";
 import NotFound from "./components/NotFound";
-import AI from "./components/AI";
-
 import ChatAPIComponent from "./components/ChatAPIComponent ";
 import ImageGeneration from "./components/ImageGeneration";
 
 import Footer from "./components/Footer";
+
+import VideoBackground from "./components/VideoBackground";
 
 
 // function AppRouter() {
@@ -42,6 +42,7 @@ function AppRouter() {
 
   return (
     <>
+    
       {!isAuthenticated ? (
         <Routes>
           <Route path="/" element={<Login />} />
@@ -51,6 +52,7 @@ function AppRouter() {
         </Routes>
       ) : (
         <>
+        <VideoBackground/>
           <Navigation />
           <Routes>
             <Route path="/home" element={<Home />} />
@@ -61,9 +63,10 @@ function AppRouter() {
             <Route path="*" element={<NotFound />} />
             
             <Route path="/chatApi" element={<ChatAPIComponent />} />
-            
           </Routes>
+          
           {/* <Footer /> */}
+          
         </>
       )}
     </>
