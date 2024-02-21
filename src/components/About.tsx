@@ -39,7 +39,7 @@ function About() {
       <Container className="d-flex  justify-content-center align-items-center " style={{ minHeight: '100vh' }}>
      
       <div id="aboutHero">
-        <h1 className="text-center" style={{textDecoration: "underline black 2px"}}>About "Blank"</h1>
+        <h1 className="text-center" style={{textDecoration: "underline black 2px"}}>About EasyLib</h1>
         <h3 className='text-center'>Who are We?</h3>
         <h5>We are a highly trained team of sexy agents that deliver software solutions</h5>
         <h5>We are excited to have you try our product and would appreciate your feedback</h5>

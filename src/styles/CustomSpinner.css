@@ -72,7 +72,7 @@
     content: '';
     width: 48px;
     height: 5px;
-    background: #001eff73;
+    background: #00000073;
     position: absolute;
     top: 60px;
     left: 0;
@@ -84,7 +84,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    background: #0378ee;
+    background: #ffd900;
     position: absolute;
     top: 0;
     left: 0;
@@ -125,4 +125,6 @@
     50% {
       transform: scale(1.2, 1);
     }
-  }
+  } 
+
+

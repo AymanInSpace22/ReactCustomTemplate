@@ -12,6 +12,8 @@ import ImageGeneration from "./components/ImageGeneration";
 import Footer from "./components/Footer";
 
 import VideoBackground from "./components/VideoBackground";
+import AudioGenerator from "./components/AudioGenerator";
+import ShortStoryGenerator from "./components/ShortStoryGenerator";
 
 
 // function AppRouter() {
@@ -61,6 +63,8 @@ function AppRouter() {
             <Route path="/login" element={<Login />} />
             <Route path="/create-account" element={<CreateAccount />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/poemGenerator" element={<AudioGenerator />} />
+            <Route path="/shortStoryGenerator" element={<ShortStoryGenerator />} />
             
             <Route path="/chatApi" element={<ChatAPIComponent />} />
           </Routes>

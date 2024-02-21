@@ -129,7 +129,7 @@ const ImageGeneration: React.FC = () => {
     return (
         <Container className="mt-5">
             <h1 className="text-center">Image Generation</h1>
-            <Card className="p-4 mt-4">
+            <Card className="p-4 mt-4" id="chatContainer">
                 <Form>
                     <Form.Group controlId="prompt">
                         <Form.Label>Enter a Prompt:</Form.Label>

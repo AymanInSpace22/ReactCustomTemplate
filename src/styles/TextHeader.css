@@ -1,0 +1,37 @@
+/* this is for the text header on each page */
+
+
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+@font-palette-values --Grays {
+    font-family: Rocher;
+    base-palette: 9;
+}
+
+@font-palette-values --Purples {
+    font-family: Rocher;
+    base-palette: 6;
+}
+
+.headerText {
+    font-size: 80px;
+    font-family: 'Rocher';
+    font-palette: --Grays;
+}
+
+@media (max-width: 768px) {
+    .headerText {
+        font-size: 40px;
+    }
+}
+
+/* this one is for the subheadings */
+.subHeaderText{
+    font-size: 22px;
+    font-family: 'Rocher';
+    font-palette: --Grays;
+}
