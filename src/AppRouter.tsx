@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 import VideoBackground from "./components/VideoBackground";
 import AudioGenerator from "./components/AudioGenerator";
 import ShortStoryGenerator from "./components/ShortStoryGenerator";
-
+import SpeechToText from "./components/SpeechToText";
 
 // function AppRouter() {
 //   return (
@@ -65,6 +65,7 @@ function AppRouter() {
             <Route path="*" element={<NotFound />} />
             <Route path="/poemGenerator" element={<AudioGenerator />} />
             <Route path="/shortStoryGenerator" element={<ShortStoryGenerator />} />
+            <Route path="/speechToText" element={<SpeechToText />} />
             
             <Route path="/chatApi" element={<ChatAPIComponent />} />
           </Routes>
