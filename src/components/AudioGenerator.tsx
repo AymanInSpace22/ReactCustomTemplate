@@ -21,7 +21,7 @@ const AudioGenerator: React.FC = () => {
         setIsLoading(true);
 
         try {
-            const response = await axios.post('https://localhost:7282/api/AudioGeneration/PoemGenerator', {
+            const response = await axios.post('https://localhost:7282/api/AudioGeneration/AudioGenerator', {
                 prompt: prompt,
                 voice: voice,
                 language: language,

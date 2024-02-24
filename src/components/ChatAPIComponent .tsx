@@ -8,8 +8,10 @@ import NewSpinner from './NewSpinner';
 
 
 interface APIResponse {
-    data: string; // Adjust this type according to your actual API response structure
+    response: string;
+    time: string;
 }
+
 
 const ChatAPIComponent: React.FC = () => {
     const [prompt, setPrompt] = useState<string>('');
