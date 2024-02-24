@@ -43,6 +43,9 @@ function About() {
         <h3 className='text-center'>Who are We?</h3>
         <h5>We are a highly trained team of sexy agents that deliver software solutions</h5>
         <h5>We are excited to have you try our product and would appreciate your feedback</h5>
+
+        <a id='hush' className='mt-3' style={{fontSize: "30px"}} href='https://forms.office.com/r/wE7h3Y5bhp'>Submit Feedback Here</a>
+
         
         <br />
         <div className="text-center"> {/* Center the image horizontally */}

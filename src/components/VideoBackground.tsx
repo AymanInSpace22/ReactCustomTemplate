@@ -18,7 +18,7 @@ const VideoBackground = () => {
     <>
     <div className="video-background">
       <video autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
-        <source src="bluebg.mp4" type="video/mp4" />
+        <source src="white.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>

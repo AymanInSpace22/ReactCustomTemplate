@@ -52,7 +52,7 @@
   #out3 {
     animation: rotate16 3s ease-in-out infinite alternate;
     transform-origin: center;
-    stroke: #07A0C3;
+    stroke: #FF6F3C;
   }
   
   #inner3,
@@ -62,7 +62,7 @@
   }
   
   #center1 {
-    fill: #07A0C3;
+    fill: #FF6F3C;
     animation: rotate16 2s ease-in-out infinite alternate;
     transform-origin: center;
   }

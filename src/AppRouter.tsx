@@ -63,8 +63,8 @@ function AppRouter() {
             <Route path="/login" element={<Login />} />
             <Route path="/create-account" element={<CreateAccount />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/poemGenerator" element={<AudioGenerator />} />
-            <Route path="/shortStoryGenerator" element={<ShortStoryGenerator />} />
+            <Route path="/audioGenerator" element={<AudioGenerator />} />
+            {/* <Route path="/shortStoryGenerator" element={<ShortStoryGenerator />} /> */}
             <Route path="/speechToText" element={<SpeechToText />} />
             
             <Route path="/chatApi" element={<ChatAPIComponent />} />

@@ -11,6 +11,7 @@ const AudioGenerator: React.FC = () => {
     const [prompt, setPrompt] = useState<string>('');
     const [voice, setVoice] = useState<string>('');
     const [language, setLanguage] = useState<string>('');
+    const [format, setFormat] = useState<string>('');
     const [downloadUrl, setDownloadUrl] = useState<string>('');
     const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -23,7 +24,8 @@ const AudioGenerator: React.FC = () => {
             const response = await axios.post('https://localhost:7282/api/AudioGeneration/PoemGenerator', {
                 prompt: prompt,
                 voice: voice,
-                language: language
+                language: language,
+                format: format
             }, {
                 responseType: 'blob', // Important for handling binary data
                 headers: {
@@ -46,7 +48,7 @@ const AudioGenerator: React.FC = () => {
 
     return (
         <Container className="mt-3">
-            <h1 className="text-center headerText">Generate a poem</h1>
+            <h1 className="text-center headerText">Literature Generator</h1>
             <Card className="p-4 mt-4" id="chatContainer">
                 <Form onSubmit={handleSubmit}>
                     <Form.Group controlId="prompt">
@@ -59,10 +61,20 @@ const AudioGenerator: React.FC = () => {
                             disabled={isLoading}
                         />
 
+                        <Form.Label className='mt-3 subHeaderText'>Format:</Form.Label>
+                        <Form.Select
+                            onChange={(e) => setFormat(e.target.value)}
+                            aria-label="Default select example">
+                            <Form.Label>Imagine your idea:</Form.Label>
+                            <option value="0">--</option>
+                            <option value="poem">Poem</option>
+                            <option value="story">Short Story</option>
+                        </Form.Select>
+
                         <Form.Label className='mt-3 subHeaderText'>Voice Type:</Form.Label>
                         <Form.Select
-                         onChange={(e) => setVoice(e.target.value)}
-                         aria-label="Default select example">
+                            onChange={(e) => setVoice(e.target.value)}
+                            aria-label="Default select example">
                             <Form.Label>Imagine your idea:</Form.Label>
                             <option value="0">--</option>
                             <option value="1">Male</option>
@@ -71,8 +83,8 @@ const AudioGenerator: React.FC = () => {
 
                         <Form.Label className='mt-3 subHeaderText'>Language:</Form.Label>
                         <Form.Select
-                         onChange={(e) => setLanguage(e.target.value)}
-                         aria-label="Default select example">
+                            onChange={(e) => setLanguage(e.target.value)}
+                            aria-label="Default select example">
                             <Form.Label>Imagine your idea:</Form.Label>
                             <option value="0">--</option>
                             <option value="english">English</option>
